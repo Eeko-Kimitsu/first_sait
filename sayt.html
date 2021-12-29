@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" media="all" type="text/css" href="style.css">
+	<title>Сайт Бирюков Илья</title>
+	<script>
+		var urls = ["адрес1","адрес2"]; //переключение фреймов
+		var curl = 0;
+		function changeURL(frame)
+		{
+		   if(curl == 0)
+		   {
+			   frame.src = urls[0];
+			   curl = 1;
+		   }
+		   else
+		   {
+			   frame.src = urls[1];
+			   curl = 0;
+		   }
+		}
+	</script>
+</head>
+<body>
+   <div class="container">
+		<div class="header">
+			<div class="logo"> 
+				<img src="logo.jpg" width="100px" height="100" > 
+			</div>
+			<div class="headercenter">
+				<div class="naming">
+					Бизнесс-лапки
+				</div>
+				<div id="navigation">
+					<ul>
+						<li><a href="КОТолог.html"target="main">КОТолог</a></li>
+						<li><a href="">Блог</a>
+							<ul>
+								<li><a href="Кот адвокат.html" target="main">Кот адвокат </a></li>
+								<li><a href="Кот нотариус.html" target="main">Кот нотариус </a></li>
+								<li><a href="Кот юрист.html" target="main">Кот юрист</a></li>
+							</ul>
+						</li>
+						<li><a href="">О компании</a>
+							<ul>
+								<li><a href="Для специалистов.html " target="main">Для специалистов </a></li>
+								<li><a href="Для покупателей.html" target="main">Для котолентов </a></li>
+								<li><a href="Вакансии.html" target="main">Вакансии</a></li>
+							</ul>
+						</li>	
+						<li><a href="Контакты.html" target="main">Контакты</a></li>
+					</ul>
+					<!-- <div class="navblock" href="Для рекламодателей.html " target="main">Главная</div>
+					<div class="navblock" href="Для покупателей.html" target="main">КОТолог</div>
+					<div class="navblock">О нас</div>
+					<div class="navblock">ну чтот</div> -->
+				</div>
+			</div>
+			<div class="registration"> </div>
+			<div> </div>
+		</div>
+		
+		<div class="content">
+			<iframe src="КОТолог.html" name="main" align="left" marginheight="0"
+					style="overflow:hidden;  border-width:0px; width:100%; min-height:750px; z-index:-1; overflow-x:hidden;">
+				
+				
+			</iframe>
+		</div>
+	</div>
+	
+	<div id="footer">
+		<div class="content">
+			<div class="left">
+				<span>Copyright © example.com 2021</span>
+				<a href="">КОТолог</a>
+				<a href="">Блог</a>
+				<a href="">О компании</a>
+				<a href="">Контакты</a>
+			</div>
+			<div class="count">
+				<img src="Logo.jpg" alt="" width="100px" height="100" >
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
+
